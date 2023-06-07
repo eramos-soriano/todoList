@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
+    <style>
+        .crossed-out {
+            text-decoration: line-through;
+        }
+
+        .crossed-out-color {
+            color: grey;
+        }
+    </style>
 </head>
 <body>
+    <!-- jquery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <div class="container">
-        
+        <h1>To Do List</h1>
+        <!-- input to add item to list --> 
+        <div class="list-header">
+                <input type="text" id="taskInput" placeholder="Add to list">
+                <button id="addTaskButton">Add</button>
+        </div>
+        <!-- display list items -->
+        <div class="list-display">
+            <ul id="taskItem"></ul>
+        </div>
     </div>
+    <script type="text/javascript" src="app.js"></script>
     
 </body>
 </html>

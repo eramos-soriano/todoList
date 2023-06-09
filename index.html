@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDoList</title>
-    <style>
-        .crossed-out {
-            text-decoration: line-through;
-        }
-
-        .crossed-out-color {
-            color: grey;
-        }
-    </style>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- jquery library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<body>
     <div class="container">
-        <h1>To Do List</h1>
-        <!-- input to add item to list --> 
+        <h1>To-Do List</h1>
+        <!-- list header, which includes input bar and enter button -->
         <div class="list-header">
-                <input type="text" id="taskInput" placeholder="Add to list">
-                <button id="addTaskButton">Add</button>
+            <input type="text" id="taskInput" placeholder="Enter a task" />
+            <button id="addTaskButton" onclick="addTask()">Add Task</button>
         </div>
-        <!-- display list items -->
-        <div class="list-display">
+        <!-- display task lists -->
+        <div class="list-items">
             <ul id="taskItem"></ul>
         </div>
     </div>
-    <script type="text/javascript" src="app.js"></script>
-    
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/2781a4e9ad.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

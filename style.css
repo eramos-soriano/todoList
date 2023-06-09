@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e6f6fe;
+}
+
+.container {
+    background: #fff;
+    color: black;
+    padding: 3rem;
+    width: 45%;
+    margin: 4rem auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.list-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#taskInput {
+    background-color: #e6f6fe;
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-color: #0047AB;
+}
+
+#addTaskButton {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#addTaskButton:hover {
+    background-color: #45a049;
+}
+
+#taskItem {
+    list-style-type: none;
+    padding-left: 10%;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: #d3d3d3;
+}
+
+.delete-button {
+    position: absolute;
+    right: 35%;
+    /*background-color: #ff0000;*/
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    color: #cc0000;
+}
+
+@media(max-width: 936px){
+    .container {
+        width: 70%;
+    }
+
+    #taskInput {
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    #addTaskButton {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 5px;
+        cursor: pointer;
+    }
+    
+    #addTaskButton:hover {
+        background-color: #45a049;
+    }
+
+    .task {
+        font-size: smaller;
+    }
+
+    .delete-button {
+        right: 35%;
+    }
+    #taskItem {
+        padding-left: 15%;
+    }
+}
